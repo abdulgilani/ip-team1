@@ -15,55 +15,67 @@
  }
 
 
- // font mixins
 
-//  @mixin titillium-regular {
-//     font-family: 'Titillium Web', sans-serif;
-//     font-weight: 400;
-//     font-style: normal;
-//  }
+ @mixin figtree-medium {
+    font-family: 'Figtree',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+ }
+
+ @mixin figtree-semi {
+    font-family: 'Figtree',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+ }
  
-//  @mixin titillium-semi {
-//     font-family: 'Titillium Web', sans-serif;
-//     font-weight: 600;
-//     font-style: normal;
-//  }
+ @mixin figtree-regular {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
 
-//  //body small size (p3):
-//  @mixin body-small{
-//     font-size: 0.69rem;
-//     line-height: 1rem;
-//     color: $color-text;
+ @mixin figtree-light {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+ }
 
-//     @include tablet {
-//         font-size: 0.75rem;
-//         line-height: 1.13rem;
-//     }
-//  }
 
-//  //body medium size (p2):
-// @mixin body-medium{
-//     font-size: 0.83rem;
-//     line-height: 1.25rem;
-//     color: $color-text;
+ //body small size (p3):
+ @mixin body-small{
+    font-size: 0.69rem;
+    line-height: 1rem;
+    color: $color-text;
 
-//     @include tablet {
-//         font-size: 0.875rem;
-//         line-height: 1.38rem;
-//     }
-// }
+    @include tablet {
+        font-size: 0.75rem;
+        line-height: 1.13rem;
+    }
+ }
 
-// //body large size (p1):
-// @mixin body-large {
-//     @include titillium-regular;
-//     font-size: 0.938rem;
-//     line-height: 1.63rem;
-//     color: $color-text;
+ //body medium size (p2):
+@mixin body-medium{
+    font-size: 0.83rem;
+    line-height: 1.25rem;
+    color: $color-text;
 
-//     @include tablet {
-//         font-size: 1rem;
-//         line-height: 1.75rem;
-//     }
-// }
+    @include tablet {
+        font-size: 0.875rem;
+        line-height: 1.38rem;
+    }
+}
+
+//body large size (p1):
+@mixin body-large {
+    @include titillium-regular;
+    font-size: 0.938rem;
+    line-height: 1.63rem;
+    color: $color-text;
+
+    @include tablet {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
 
 

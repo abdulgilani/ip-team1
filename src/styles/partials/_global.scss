@@ -2,95 +2,100 @@
 @use "./typography.scss" as *;
 @use "./mixins.scss" as *;
 
-// * {
-// 	box-sizing: border-box;
-// 	margin: 0;
-// 	padding: 0;
-// 	text-decoration: none;
-// }
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    font-family: 'Figtree';
+}
 
-// body{
-// 	background-color: $color-page-background;
-// }
+//page header:
+h1 {
+	@include figtree-semi;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	color: $color-dark-grey;
 
-// //page header:
-// h1 {
-// 	@include titillium-semi;
-// 	font-size: 1.75rem;
-// 	line-height: 2.25rem;
-// 	color: $color-text;
+	@include tablet {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+}
 
-// 	@include tablet {
-// 		font-size: 2rem;
-// 		line-height: 2.5rem;
-// 	}
-// }
+//sub-header:
+h2 {
+	@include figtree-semi;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: $color-red;
 
-// //sub-header:
-// h2 {
-// 	@include titillium-semi;
-// 	font-size: 1.25rem;
-// 	line-height: 1.75rem;
-// 	color: $color-text;
+	@include tablet {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
 
-// 	@include tablet {
-// 		font-size: 1.5rem;
-// 		line-height: 2rem;
-// 	}
-// }
+//labels, links & buttons:
+h3 {
+	@include figtree-medium;
+	font-size: 0.83rem;
+	line-height: 1.25rem;
+	color: $color-dark-grey;
 
-// //labels, links & buttons:
-// h3 {
-// 	@include titillium-semi;
-// 	font-size: 0.83rem;
-// 	line-height: 1.25rem;
-// 	color: $color-text;
+	@include tablet {
+		font-size: 0.875rem;
+		line-height: 1.375rem;
+	}
+}
 
-// 	@include tablet {
-// 		font-size: 0.875rem;
-// 		line-height: 1.375rem;
-// 	}
-// }
+//table header:
+h4 {
+	@include figtree-medium;
+	font-size: 0.69rem;
+	line-height: 1rem;
+	color: $color-red;
 
-// //table header:
-// h4 {
-// 	@include titillium-semi;
-// 	font-size: 0.69rem;
-// 	line-height: 1rem;
-// 	color: $color-table-column-headers;
+	@include tablet {
+		font-size: 0.75rem;
+		line-height: 1.13rem;
+	}
+}
 
-// 	@include tablet {
-// 		font-size: 0.75rem;
-// 		line-height: 1.13rem;
-// 	}
-// }
+//body, @include (body-large, body-medium, body-small for different sizes)
+p {
+	@include figtree-regular;
+	color: $color-dark-grey;
+}
 
-// //body, @include (body-large, body-medium, body-small for different sizes)
-// p {
-// 	@include titillium-regular;
-// 	color: $color-text;
-// }
+span {
+	@include figtree-regular;
+	color: $color-dark-grey;
+}
 
-// ul {
-// 	list-style-type: none;
-// 	display: flex;
-// 	justify-content: flex-end;
-// 	gap: 8px;
-// }
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+}
 
-// li {
-// 	@include titillium-semi;
-// }
+li {
+	@include figtree-regular;
+}
 
-// html {
-// 	width: 100%;
-// 	background-color: $color-page-background;
-// }
+html {
+	width: 100%;
+	background-color: $color-white;
+}
 
-// body {
-// 	width: 100%;
-// }
+body {
+	width: 100%;
+    justify-content: center;
+    padding:0 8vw;
+    background-color: $color-red;
+}
 
-// footer {
-// 	width: 100%;
-// }
+footer {
+	width: 100%;
+}
