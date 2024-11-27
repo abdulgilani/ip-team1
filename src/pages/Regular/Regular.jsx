@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
-import './Results.scss';
+import '../Results/Results.scss';
 
-const Results = () => {
+const Regular = () => {
     const navigate = useNavigate(); // Initialize the navigate function
 
     const handleStart = () => {
@@ -93,13 +93,6 @@ const Results = () => {
             </div>
             <h3 className='results__sub'>These are the results for your next trip...</h3>
             <div className='picture'>
-                <div className='picture__image picture__image--1'>
-                    
-                </div>
-                <h2 className='picture__details'>Tropical Paradise Bahamas</h2>
-                <h2 className='picture__details picture__details--host'>Hosted by Kareem Fernandez</h2>
-                <h2 className='picture__details'>Available</h2>
-            </div>
 
             <div className='picture'>
                 <div className='picture__image picture__image--2'>
@@ -110,15 +103,23 @@ const Results = () => {
                 <h2 className='picture__details'>Sold Out</h2>
             </div>
 
-            <div className='picture'>
-            <div className='picture__image picture__image--1'>
-           
+                <div className='picture__image picture__image--1'>
+                    
                 </div>
                 <h2 className='picture__details'>Tropical Paradise Bahamas</h2>
-                <h2 className='picture__details picture__details--host'>Hosted by Host</h2>
-                <h2 className='picture__details'>Sold Out</h2>
+                <h2 className='picture__details picture__details--host'>Hosted by Kareem Fernandez</h2>
+                <h2 className='picture__details'>Available</h2>
             </div>
 
+          
+            <div className='picture'>
+                <div className='picture__image picture__image--2'>
+                  
+                </div>
+                <h2 className='picture__details'>Chilly Spot Iceland</h2>
+                <h2 className='picture__details picture__details--host'>Hosted by Elizabeth Cohen</h2>
+                <h2 className='picture__details'>Sold Out</h2>
+            </div>
 
             <div className='results__icons-bottom'>
 
@@ -172,7 +173,7 @@ const Results = () => {
     );
 }
 
-export default Results;
+export default Regular;
 
 
 
