@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
+import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './Landing.scss';
 
 const Landing = () => {
@@ -7,6 +7,10 @@ const Landing = () => {
 
     const handleStart = () => {
         navigate('/questions'); // Navigate to the questions page
+    }
+
+    const handleSkip = () => {
+        navigate('/regular'); // Navigate to the regular page
     }
 
     return (
@@ -25,13 +29,10 @@ const Landing = () => {
             <div className='landing__space'></div>
             <div className='landing__buttons'>
                 <button className='landing__start' onClick={handleStart}>Start</button>
-                <button className='landing__skip'>Skip</button>
+                <button className='landing__skip' onClick={handleSkip}>Skip</button> {/* Add onClick handler */}
             </div>
         </body>
     );
 }
 
 export default Landing;
-
-
-
